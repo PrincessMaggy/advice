@@ -11,8 +11,8 @@ This webpage generates random quotes by fetching data from an api address.
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://github.com/PrincessMaggy/advice.git]
+- Live Site URL: [https://princessmaggy.github.io/advice/]
 
 ### Built with
 
@@ -22,6 +22,6 @@ This webpage generates random quotes by fetching data from an api address.
 
 ## Author
 
-- Website - [PrincessMaggy](https://www.your-site.com)
+- Website - [PrincessMaggy](https://princessmaggy.github.io/My-Portfolio/)
 - Frontend Mentor - [@princessmaggy](https://www.frontendmentor.io/profile/princessmaggy)
 - Twitter - [@princessmaggy7](https://www.twitter.com/princessmaggy7)
