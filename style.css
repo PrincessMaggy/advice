@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+button {
+  background-color: rgb(97, 97, 247);
+  color: white;
+  border-radius: 5px;
+  padding: 1em;
+  font-weight: 700;
+  border: navajowhite;
+  cursor: pointer;
+}
+button:hover {
+  border: none;
+  padding: 0.7em;
+  transition: ease-in-out 0.3s;
+}
