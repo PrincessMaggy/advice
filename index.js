@@ -1,7 +1,11 @@
 let button = document.querySelector('button');
 let header = document.querySelector('h1');
 
+button.addEventListener('click', ()=>{
+    fetch('https://api.adviceslip.com/advice')
+    .then(result => result.json())
+        .then(data =>{
+            header.innerText = data.slip.advice;
+        })
+})
 
-fetch('https://api.adviceslip.com/advice').then(
-    result => console.log(result)
-)
