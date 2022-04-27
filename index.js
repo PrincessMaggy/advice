@@ -1,11 +1,30 @@
-let button = document.querySelector('button');
-let header = document.querySelector('h1');
+let text = document.querySelector('#text');
+let author = document.querySelector('#author');
+let tweetButton = document.querySelector('#tweet-quote');
 
-button.addEventListener('click', ()=>{
-    fetch('https://api.adviceslip.com/advice')
-    .then(result => result.json())
-        .then(data =>{
-            header.innerText = data.slip.advice;
-        })
-})
+let newQuote = document.querySelector('#new-quote');
 
+const getNewQuote = async() => {
+    let url = "https://type.fit/api/quotes";
+    const response = await fetch(url);
+    const allQuotes = await response.json();
+
+    const indx = Math.floor(Math.random() * allQuotes.length);
+    const quote = allQuotes[indx].text;
+    const auth = allQuotes[indx].author;
+    if (auth == null) {
+        author = "Anonymous";
+    }
+    text.innerHTML = quote;
+    author.innerHTML = auth;
+
+    //tweet the quote
+    tweetButton.href = "https://twitter.com/intent/tweet?text=" + quote + " ~ " + auth;
+
+}
+
+getNewQuote();
+
+newQuote.addEventListener('click', () => getNewQuote()
+
+);

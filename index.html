@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Welcome</h1>
-    <button> Click me</button>
+    <div id="quote-box">
+        <div>
+            <p> QUOTE:</p>
+            <p id="text"></p>
+        </div>
+        <div style="display: inline-flex;">
+            <p>AUTHOR: </p>
+            <p id="author"></p>
+        </div>
+        </br>
+        <button id="new-quote">New quote</button>
+
+        <a id="tweet-quote" href="https://twitter.com/intent/tweet" target="_blank">
+            <img style="max-width: 30%; margin-left:1em" src="./img/twitter.png" />
+        </a>
+    </div>
+
+
+
     <script src="index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </body>
+
 </html>

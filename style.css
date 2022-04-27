@@ -1,17 +1,32 @@
-body {
-  text-align: center;
-}
 button {
-  background-color: rgb(97, 97, 247);
-  color: white;
-  border-radius: 5px;
-  padding: 1em;
-  font-weight: 700;
-  border: navajowhite;
-  cursor: pointer;
+    background-color: rgb(97, 97, 247);
+    color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+    font-weight: 700;
+    border: navajowhite;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
 }
+
+#text {
+    font-weight: 600;
+}
+
+#author {
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
 button:hover {
-  border: none;
-  padding: 0.7em;
-  transition: ease-in-out 0.3s;
+    border: none;
+    padding: 0.7em;
+    transition: ease-in-out 0.3s;
+}
+
+#quote-box {
+    width: 70%;
+    margin: auto;
+    padding: 1em;
 }
